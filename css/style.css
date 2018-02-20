@@ -1,0 +1,146 @@
+html {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/manoir.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.start {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+}
+
+#leftDivStart {
+    left: 0;
+}
+
+#rightDivStart {
+    right: 0;
+}
+
+.pokemon {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 30px;
+    z-index: 3;
+}
+
+#leftPokemon {
+    left: 100px;
+}
+
+#rightPokemon {
+    right: 100px;
+}
+
+.attack {
+    position: absolute;
+    bottom: 100px;
+    display: none;
+}
+
+#attackleftPokemon {
+    height: 20px;
+    width: 70px;
+    left: 250px;
+}
+
+#attackrightPokemon {
+    height: 40px;
+    width: 100px;
+    right: 220px;
+}
+
+.specialAttack {
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    bottom: 5px;
+    display: none;
+    z-index: 4;
+}
+
+#specialAttackrightPokemon {
+    left: 100px;
+}
+
+#specialAttackleftPokemon {
+    right: 100px;
+}
+
+@font-face {
+	font-family: "Pixeled";
+	src: url('../Pixeled.ttf');
+}
+
+
+/* HEADER */
+
+.progress {
+  width: 45%;
+  height: 8%;
+  background-color: #ddd;
+  position: absolute;
+  top: 4%;
+  border: 4px black solid;
+  z-index: 0;
+}
+
+#lifeProgressleftPokemon {
+  left: 0px;
+}
+
+#lifeProgressrightPokemon {
+    right: 0px;
+}
+
+.life {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-right: 1px black solid;
+}
+
+#pokeball {
+    width: 8.5%;
+    height: 15%;
+    position: absolute;
+    top: 5px;
+    left: 45.8%;
+    z-index: 1;
+}
+
+.namePokemon {
+    position: absolute;
+    top: 8%;
+    font-weight: bold;
+    font-family: Pixeled, sans-serif;
+    font-size: 1.5rem;
+}
+
+#nameleftPokemon {
+    left: 1%;
+    color: yellow;
+}
+
+#namerightPokemon {
+    right: 1%;
+    color: red;
+}
+
+#labelWinner {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    display: none;
+    font-family: Pixeled, sans-serif;
+    position: absolute;
+    top: 2%;
+    width: 99%;
+}

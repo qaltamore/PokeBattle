@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokébattle</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/pokeball.jpg" />
+</head>
+<div id="leftDivStart" class="start"></div>
+<div id="rightDivStart" class="start"></div>
+<body>
+    <p id="labelWinner">WINNER !</p>
+    
+    <img src="img/PikachuRight.gif" alt="" id="leftPokemon" class="pokemon" />
+    <div class="progress" id="lifeProgressleftPokemon">
+        <div class="life" id="leftPokemonLife"></div>
+    </div>
+    <img src="img/lightning.png" class="attack" id="attackleftPokemon" />
+    <img src="" class="specialAttack" id="specialAttackleftPokemon" />
+
+    <p class="namePokemon" id="nameleftPokemon">Pikachu</p>
+    <img src="img/pokeball.jpg" id="pokeball" />
+    <p class="namePokemon" id="namerightPokemon">Caninos</p>
+
+    <img src="img/CaninosLeft.gif" alt="" id="rightPokemon" class="pokemon" />
+    <div class="progress" id="lifeProgressrightPokemon">
+        <div class="life" id="rightPokemonLife"></div>
+    </div>
+    <img src="img/fireball.png" class="attack" id="attackrightPokemon" />
+    <img src="" class="specialAttack" id="specialAttackrightPokemon" />
+
+    <audio src="./start.mp3" loop="true" autoplay id="audio" /> -->
+
+    <!-- SCRIPTS -->
+    <script src="js/pokemon.js" type="text/javascript"></script>
+    <script>
+            //Name, Evolution, LifePoints, AttackPoints, DefensePoints, AttackSpeed, Speed, Orientation, ReverseOrientation, Position, Right or Left ?
+            var rightPokemon = new Pokemon("Caninos", "Arcanin", /*life*/ 100, /*atk*/ 12, /*def*/ 1, /*atkSpeed*/ 10, /*speed*/ 50, "Left", "Right", /*position*/ (document.body.clientWidth - 100 - 150), "rightPokemon"); //-150 = largeur de l'image
+            var leftPokemon = new Pokemon("Pikachu", "Raichu", /*life*/ 100, /*atk*/ 6, /*def*/ 1, /*atkSpeed*/ 5, /*speed*/ 100, "Right", "Left", /*position*/ 100, "leftPokemon");
+        </script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
